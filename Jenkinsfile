@@ -4,7 +4,7 @@ pipeline {
         stage('checkout') {
             steps {
                 script {
-                    git branch: 'main', changelog: false, poll: false, url: 'https://github.com/sriharshamelam/my-app.git'
+                    git branch: 'main', url: 'https://github.com/sriharshamelam/my-app.git'
                 }
             }
         }
